@@ -1,3 +1,7 @@
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 14pt;
+}
 .jumbotron {
 	background: red; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163)); /* For Safari 5.1 to 6.0 */
@@ -9,6 +13,20 @@
 	text-align: center;
 	color: white;
 }
+.landing-text h1 {
+	font-weight: 700;
+}
 .icons {
 	color: white;
+	padding: 5px;
+}
+.portfolio{
+	text-align: center;
+}
+.portfolio h2 {
+	text-align: left;
+}
+.portfolio-img {
+	width: 100%;
+	height: auto;
 }
