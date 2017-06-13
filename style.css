@@ -93,6 +93,9 @@ section h2 {
 	width: 100%;
 	height: auto;
 }
+.videos {
+	padding-top: 30px;
+}
 footer {
 	margin-top: 20px;
 	text-align: center;
