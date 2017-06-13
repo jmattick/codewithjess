@@ -92,5 +92,6 @@ li {
 @media only screen and (max-device-width: 480px) {
 	#nav-toggle {
 		background: white;
+		color: black;
 	}
 }
