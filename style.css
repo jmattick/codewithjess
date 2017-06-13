@@ -94,4 +94,7 @@ li {
 		background: white;
 		color: black;
 	}
+	#logo {
+		height: 20px;
+	}
 }
