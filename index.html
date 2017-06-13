@@ -21,9 +21,25 @@
 
 </head>
 <body>
+	<!-- navbar -->
+	<button id="nav-toggle" onclick = "togfunc()" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></button>
+	<button id="close-nav" onclick = "togfunc2()" class="btn btn-dark btn-lg toggle inactive"><i class="fa fa-times"></i></button>
+	<nav id="sidebar-wrapper" class="inactive">
+        <ul class="sidebar-nav">
+            <li class="brand">
+                <a href="#top" onclick = "togfunc2()"><img src="img/cwjlogo_B2J_icon.ico" style="height40px;"> Code with Jess</a>
+            </li>
+            <li>
+                <a href="#about" onclick = "togfunc2()">About Me</a>
+            </li>
+            <li>
+                <a href="#portfolio" onclick ="togfunc2()">Portfolio</a>
+            </li>
+        </ul>
+    </nav>
 	
-	
-	<div class="jumbotron">
+	<!---title-->
+	<div class="jumbotron"id="start">
 		<div class = "landing-text">
 			<h1>Code with Jess</h1>
 			<h2>See what I'm working on</h2>
@@ -64,6 +80,11 @@
 			</div>
 		</div>
 	</section>
-	
+	<!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="app.js"></script>
 </body>
 </html>
