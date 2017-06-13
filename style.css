@@ -58,7 +58,7 @@ li {
 	color: black;
 }
 .jumbotron {
-	background: red; /* For browsers that do not support gradients */
+	background: rgb(117, 129, 163); /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163)); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163)); /* For Firefox 3.6 to 15 */
@@ -75,6 +75,10 @@ li {
 	color: white;
 	padding: 5px;
 }
+section h2 {
+	color: rgb(117, 129, 163);
+	font-weight: 700;
+}
 .about {
 	padding-top: 30px;
 }
@@ -89,13 +93,30 @@ li {
 	width: 100%;
 	height: auto;
 }
+footer {
+	margin-top: 20px;
+	text-align: center;
+	color: white;
+	padding: 20px;
+	background: rgb(117, 129, 163); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163));
+}
+footer a:hover {
+	color: black;
+}
+footer a {
+	color: white;
+}
 @media only screen and (max-device-width: 480px) {
 	#nav-toggle {
 		background: white;
 		color: black;
 	}
 	#logo {
-		height: 35px;
+		height: 30px;
 	}
 	#sidebar-wrapper{
 		width: 100%;
