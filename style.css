@@ -2,6 +2,61 @@ body {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 14pt;
 }
+a:hover {
+	text-decoration: none;
+	color: black;
+}
+a {
+	color: white;
+}
+.inactive {
+	display:none;
+}
+#nav-toggle {
+	color: rgb(117, 129, 163);
+	background: rgb(255,255,255,0.8);
+	float: left;
+	position: fixed;
+	left: 5px;
+	top: 5px;
+	z-index: 2;
+	border-radius: 0px;
+}
+#close-nav {
+	background: rgb(255,255,255,0.8);
+	float: left;
+	position: fixed;
+	left: 5px;
+	top: 5px;
+	z-index: 2;
+	border-radius: 0px;
+}
+#sidebar-wrapper{
+	background: gray;
+	position: fixed;
+	padding: 5px;
+	width: auto;
+	left: 5px;
+	top: 5px;	
+	z-index: 1;
+	box-shadow: 1px 1px 1px #888888;
+}
+.brand {
+	font-size: 18pt;
+	font-weight: 700;
+}
+ul {
+	list-style-type: none;
+	margin: 10px;
+	margin-top: 2px;
+}
+li {
+	padding-left: 10px;
+	text-align: middle;
+}
+.sidebar-nav {
+	color: black;
+}
 .jumbotron {
 	background: red; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163)); /* For Safari 5.1 to 6.0 */
@@ -20,8 +75,12 @@ body {
 	color: white;
 	padding: 5px;
 }
+.about {
+	padding-top: 30px;
+}
 .portfolio{
 	text-align: center;
+	padding-top: 30px;
 }
 .portfolio h2 {
 	text-align: left;
