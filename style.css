@@ -140,6 +140,10 @@ li {
 	color: red;
 	opacity: 0.6;
 }
+.fa-twitter:hover {
+	color: rgb(0, 172, 237);
+	opacity: 0.6;
+}
 .landing-text h1 {
 	font-weight: 700;
 }
@@ -208,5 +212,11 @@ footer a {
 	iframe {
 		width:100%;
 		height: auto;
+	}
+	#start {
+		height: 90vh;
+	}
+	#learnmore {
+		height: 10vh;
 	}
 }
