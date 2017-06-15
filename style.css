@@ -214,12 +214,12 @@ footer a {
 		height: auto;
 	}
 	#start {
-		height: 90vh;
+		height: 80vh;
 	}
 	.landing-text{
 		padding-top: 10vh;
 	}
 	#learnmore {
-		height: 10vh;
+		height: 20vh;
 	}
 }
