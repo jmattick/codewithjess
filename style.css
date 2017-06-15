@@ -216,6 +216,9 @@ footer a {
 	#start {
 		height: 90vh;
 	}
+	.landing-text{
+		padding-top: 10vh;
+	}
 	#learnmore {
 		height: 10vh;
 	}
