@@ -173,8 +173,7 @@ section h2 {
 	height: auto;
 }
 img:hover{
-
-opacity: 0.8;
+	opacity: 0.5;
 
 }
 .videos {
