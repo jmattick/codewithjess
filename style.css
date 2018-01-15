@@ -168,6 +168,9 @@ section h2 {
 .portfolio h2 {
 	text-align: left;
 }
+.portfolio p {
+	color: grey;
+}
 .portfolio-img {
 	width: 100%;
 	height: auto;
