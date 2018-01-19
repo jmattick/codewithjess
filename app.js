@@ -5,6 +5,44 @@ $(document).ready(function(){
 	var hostname = "codewithjess.com";
 	var linktext = username + "@" + hostname;
 	$("#contact").prepend("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
+	
+	//adds icons to img on hover
+	$("#RGB").hover(function(){
+		$("#rgbtech").removeClass("hidden");
+	}, function(){
+		$(".tech").addClass("hidden");
+	});
+	
+	$("#simon").hover(function(){
+		$("#simontech").removeClass("hidden");
+	}, function(){
+		$(".tech").addClass("hidden");
+	});
+	
+	$("#clock").hover(function(){
+		$("#clocktech").removeClass("hidden");
+	}, function(){
+		$(".tech").addClass("hidden");
+	});
+	
+	$("#calc").hover(function(){
+		$("#calctech").removeClass("hidden");
+	}, function(){
+		$(".tech").addClass("hidden");
+	});
+	
+	$("#wiki").hover(function(){
+		$("#wikitech").removeClass("hidden");
+	}, function(){
+		$(".tech").addClass("hidden");
+	});
+	
+	$("#quote").hover(function(){
+		$("#quotetech").removeClass("hidden");
+	}, function(){
+		$(".tech").addClass("hidden");
+	});
+	
 });
 
 //opens nav bar | Warning: will not work if inside .ready function
