@@ -179,6 +179,13 @@ img:hover{
 	opacity: 0.5;
 
 }
+.tech{
+	opacity: 0.5;
+	text-align: left;
+	padding-left: 10px;
+	position: absolute;
+	margin-top: -30px;
+}
 .videos {
 	padding-top: 30px;
 	background-color: white;
