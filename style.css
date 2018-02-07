@@ -191,6 +191,9 @@ img:hover{
 	padding-top: 30px;
 	background-color: white;
 }
+.pad {
+	padding-top: 20px;
+}
 footer {
 	margin-top: 20px;
 	text-align: center;
