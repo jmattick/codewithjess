@@ -7,6 +7,12 @@ $(document).ready(function(){
 	$("#contact").prepend("<a href='" + "mail" + "to:" + username + "@" + hostname + "'>" + linktext + "</a>");
 	
 	//adds icons to img on hover
+	$("#pfe").hover(function(){
+		$("#pfetech").removeClass("hidden");
+	}, function(){
+		$(".tech").addClass("hidden");
+	});
+
 	$("#RGB").hover(function(){
 		$("#rgbtech").removeClass("hidden");
 	}, function(){

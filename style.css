@@ -160,8 +160,15 @@ li {
 	text-align: left;
 	padding-left: 5px;
 }
-
+.tleft{
+	text-align: left;
+	padding-left: 15px;
+}
 section h2 {
+	color: rgb(117, 129, 163);
+	font-weight: 700;
+}
+section h3 {
 	color: rgb(117, 129, 163);
 	font-weight: 700;
 }
