@@ -91,10 +91,42 @@ li {
 	text-align: center;
 	padding-top: 20vh;
 	color: white;
-	animation: fadein 7s;
-    -moz-animation: fadein 7s; /* Firefox */
-    -webkit-animation: fadein 7s; /* Safari and Chrome */
-    -o-animation: fadein 7s; /* Opera */
+	animation: fadein 7s, slideup 2s;
+    -moz-animation: fadein 7s, slideup 2s; /* Firefox */
+    -webkit-animation: fadein 7s, slideup 2s; /* Safari and Chrome */
+    -o-animation: fadein 7s, slideup 2s; /* Opera */
+}
+@keyframes slideup {
+	from{
+		transform: translateY(400px);
+	}
+	to {
+		transform: translateY(0px);
+	}
+}
+@-moz-keyframes slideup { /* Firefox */
+	from{
+		transform: translateY(400px);
+	}
+	to {
+		transform: translateY(0px);
+	}
+}
+@-webkit-keyframes slideup { /* Safari and Chrome */
+	from{
+		transform: translateY(400px);
+	}
+	to {
+		transform: translateY(0px);
+	}
+}
+@-o-keyframes slideup { /* Opera */
+	from{
+		transform: translateY(400px);
+	}
+	to {
+		transform: translateY(0px);
+	}
 }
 @keyframes fadein {
     from {
