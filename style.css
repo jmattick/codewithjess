@@ -91,10 +91,10 @@ li {
 	text-align: center;
 	padding-top: 20vh;
 	color: white;
-	animation: fadein 7s, slideup 2s;
-    -moz-animation: fadein 7s, slideup 2s; /* Firefox */
-    -webkit-animation: fadein 7s, slideup 2s; /* Safari and Chrome */
-    -o-animation: fadein 7s, slideup 2s; /* Opera */
+	animation: fadein 7s, slideup 1s cubic-bezier(0.420, 0.000, 0.500, 1.420);
+    -moz-animation: fadein 7s, slideup 1s cubic-bezier(0.420, 0.000, 0.500, 1.420); /* Firefox */
+    -webkit-animation: fadein 7s, slideup 1s cubic-bezier(0.420, 0.000, 0.500, 1.420); /* Safari and Chrome */
+    -o-animation: fadein 7s, slideup 1s cubic-bezier(0.420, 0.000, 0.500, 1.420); /* Opera */
 }
 @keyframes slideup {
 	from{
