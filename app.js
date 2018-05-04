@@ -51,6 +51,11 @@ $(document).ready(function(){
 	
 });
 
+//toggles additional Front-End Projects
+$(".see-more").on("click", function (e) {
+    $(".front-end-proj").toggleClass("hidden");
+});
+
 //opens nav bar | Warning: will not work if inside .ready function
 function togfunc() {
 	$("#sidebar-wrapper").removeClass("inactive");
