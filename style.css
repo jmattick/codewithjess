@@ -58,28 +58,22 @@ li {
 	color: black;
 }
 #start {
-	background-color: black; /* For browsers that do not support gradients */
-    /*background-color: -webkit-linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163)); /* For Safari 5.1 to 6.0 */
-    /*background-color: -o-linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163));  For Opera 11.1 to 12.0 */
-    /*background-color: -moz-linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163)); /* For Firefox 3.6 to 15 */*/
-    /*background-color: linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163));*/*/
+    background: rgba(117, 129, 163, 0.9); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(45deg, rgba(117, 129, 163, 0.9), rgba(152, 117, 163,0.9)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(45deg, rgba(117, 129, 163, 0.9), rgba(152, 117, 163, 0.9)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(45deg, rgba(117, 129, 163, 0.9), rgba(152, 117, 163, 0.9)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(45deg, rgba(117, 129, 163, 0.9), rgba(152, 117, 163, 0.9));
 	z-index:-2;	
 	height: 90vh;
 	margin-bottom: 0px;
-
-	opacity: 0.8;
-	background-image:
-	/*Photo by rawpixel on Unsplash*/
-	url("img/rawpixel-568385-unsplash.jpg");
-	/*background-image: 
-	url("img/hybrid-656582-unsplash.jpg");*/
 	background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat;*/
 }
 #learnmore {
 	height: 10vh;
 	text-align: center;
+	background-color: white;
 }
 #learnmore a {
 	color: rgb(117, 129, 163);
@@ -223,6 +217,10 @@ li {
 	text-align: left;
 	padding-left: 15px;
 }
+section {
+	margin-bottom: 0px;
+	padding-bottom: 20px;
+}
 section h2 {
 	color: rgb(117, 129, 163);
 	font-weight: 700;
@@ -275,7 +273,7 @@ img:hover{
 	padding-top: 20px;
 }
 footer {
-	margin-top: 20px;
+	margin-top: 0px;
 	text-align: center;
 	color: white;
 	padding: 20px;
@@ -315,4 +313,22 @@ footer a {
 	#learnmore {
 		height: 20vh;
 	}
+}
+
+
+
+canvas {
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+}
+.cont{
+  height: 600px;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  
+  
 }
