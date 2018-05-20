@@ -58,15 +58,24 @@ li {
 	color: black;
 }
 #start {
-	background: rgb(117, 129, 163); /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163));
+	background-color: black; /* For browsers that do not support gradients */
+    /*background-color: -webkit-linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163)); /* For Safari 5.1 to 6.0 */
+    /*background-color: -o-linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163));  For Opera 11.1 to 12.0 */
+    /*background-color: -moz-linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163)); /* For Firefox 3.6 to 15 */*/
+    /*background-color: linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163));*/*/
 	z-index:-2;	
 	height: 90vh;
 	margin-bottom: 0px;
-	
+
+	opacity: 0.8;
+	background-image:
+	/*Photo by rawpixel on Unsplash*/
+	url("img/rawpixel-568385-unsplash.jpg");
+	/*background-image: 
+	url("img/hybrid-656582-unsplash.jpg");*/
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 #learnmore {
 	height: 10vh;
@@ -91,11 +100,13 @@ li {
     text-align: center;
     padding-top: 20vh;
     color: white;
+    text-shadow: 2px 2px 4px #000000;
+    z-index: 3;
     
-    animation: fadein 7s, slideup 0.6s cubic-bezier(0,.73,.94,1.17);
-    -moz-animation: fadein 7s, slideup 0.6s cubic-bezier(0,.73,.94,1.17); /* Firefox */
-    -webkit-animation: fadein 7s, slideup 0.6s cubic-bezier(0,.73,.94,1.17); /* Safari and Chrome */
-    -o-animation: fadein 7s, slideup 0.6s cubic-bezier(0,.73,.94,1.17); /* Opera */
+    animation: slideup 0.6s cubic-bezier(.2,.71,.9,1.26);
+    -moz-animation: slideup 0.6s cubic-bezier(.2,.71,.9,1.26); /* Firefox */
+    -webkit-animation: slideup 0.6s cubic-bezier(.2,.71,.9,1.26); /* Safari and Chrome */
+    -o-animation: slideup 0.6s cubic-bezier(.2,.71,.9,1.26); /* Opera */
 }
 .purple-text {
     color: rgb(117, 129, 163);
