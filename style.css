@@ -264,7 +264,8 @@ img:hover{
 }
 .gitbut{
 	border: solid 2px rgb(117, 129, 163);
-	color: rgb(117, 129, 163)
+	color: rgb(117, 129, 163);
+	border-radius: 5px;
 }
 .see-more{
    margin: 10px 0px;
