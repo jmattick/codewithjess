@@ -262,6 +262,10 @@ img:hover{
 	position: absolute;
 	margin-top: -30px;
 }
+.gitbut{
+	border: solid 2px rgb(117, 129, 163);
+	color: rgb(117, 129, 163)
+}
 .see-more{
    margin: 10px 0px;
 }
