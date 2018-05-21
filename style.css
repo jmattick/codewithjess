@@ -229,6 +229,9 @@ section h3 {
 	color: rgb(117, 129, 163);
 	font-weight: 700;
 }
+.row{
+	margin-bottom: 20px;
+}
 .about {
 	padding-top: 30px;
 	background-color: white;

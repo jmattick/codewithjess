@@ -38,9 +38,9 @@
             <li>
                 <a href="#portfolio" onclick ="togfunc2()">Portfolio</a>
             </li>
-			<li>
+			<!-- <li>
                 <a href="#videos" onclick ="togfunc2()">Videos</a>
-            </li>
+            </li> -->
 			<li>
                 <a href="#contact" onclick ="togfunc2()">Contact</a>
             </li>
@@ -56,14 +56,14 @@
 		<div class = "landing-text">
 			<h1>Code with Jess</h1>
 			<h2>See what I'm working on</h2>
-			<div class = "col-sm-6 right">
+			<div class = "">
 			<a href="https://github.com/jmatty16" target="_blank" id="github"><i class="icons fa fa-github fa-4x" aria-hidden="true"></i></a>
 			<a href="https://www.linkedin.com/in/jessicamattick" target="_blank"><i class="icons fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
 			</div>
-			<div class = "col-sm-6 left">
+			<!-- <div class = "col-sm-6 left">
 			<a href="https://www.youtube.com/channel/UCD_jjzd3XMNMgEJB3rhAW6w" target="_blank"><i class="icons fa fa-youtube-play fa-4x" aria-hidden="true"></i></a>
 			<a href="https://twitter.com/code_with_jess" target="_blank"><i class="icons fa fa-twitter fa-4x" aria-hidden="true"></i></a>
-			</div>
+			</div> -->
 
 
 		</div>
@@ -78,7 +78,7 @@
 	<section id="about" class="about">
 		<div class="container">
 			<h2>About Me</h2>
-			<p> I am a Biologist and <strong>Full-Stack Web Developer</strong>. I try to learn something new from each project I complete and make sure that I can communicate clearly what my code means. I apply the old latin principle <em>Docendo discimus</em>  ("by teaching, we learn") to my studies. As I learn new skills, I solidify my understanding by describing what I've learned in how-to youtube videos. </p>
+			<p> My name is <strong>Jessica Mattick</strong>. I am a Biologist and <strong>Full-Stack Web Developer</strong>. I was first introduced to coding while working in a lab during my undergraduate studies and ever since then have spent countless hours in the pursuit of knowledge in computer science. I try to learn something new from each project I complete and make sure that I can communicate clearly what my code means.</p>
 		</div>
 	</section> 
 	<section id="portfolio" class="portfolio">
@@ -104,7 +104,7 @@
                     <div class="col-sm-4">
                         <h3>Pockets for Everyone</h3>
                         <p>
-                            Pockets provides a space for members to communicate about their experiences buying clothing with a focus on clothing vendors that are gender-inclusive. This app uses MongoDB, Express, and Node. Users can add vendor pages and comment on existing vendors. A user can have either a standard user role or an admin role. To moderate content, users can report vendors or comments. If a vendor or comment has been reported by multiple users, it will be hidden from the page unless approved by an admin. Admins have special permissions that standard users do not, such as the ability to approve flagged content, edit/delete any vendor/comment, and view messages sent to admins.
+                            Pockets provides a space for members to communicate about their experiences buying clothing with a focus on clothing vendors that are gender-inclusive. This app uses <strong>MongoDB, Express, and Node</strong>. Users can add vendor pages and comment on existing vendors. A user can have either a standard user role or an admin role. To moderate content, users can report vendors or comments. If a vendor or comment has been reported by multiple users, it will be hidden from the page unless approved by an admin. Admins have special permissions that standard users do not, such as the ability to approve flagged content, edit/delete any vendor/comment, and view messages sent to admins.
                         </p>
                     </div>
                 </div>
@@ -112,6 +112,22 @@
             <hr>
 
             <h3 class="left">Front-End Projects</h3>
+            <div class = "row">
+                <div class = "col-sm-4">
+                    <h3>BioTools</h3>
+                    <p> Biotools provides a space to showcase solutions bioinformatics problems that I have solved. Biotools has multiple sections. One section is devoted to functional bioinformatics web tools that users can utilize. The web tools have been created using <strong>JavaScript</strong>. Another section provides <strong>Python</strong> scripts that I have written for users can copy to run on their own computer. Many of these are my solutions to problems that were proposed on <a href = "http://rosalind.info/problems/locations/">Rosalind</a> for their Bioinformatics Stronghold track.
+                    </p>
+                </div>
+                <div class = "col-sm-8">
+                    <a id="btools" href="https://jmatty16.github.io/JavaScript-Bioinformatics/" target="_blank"><img class="portfolio-img img-responsive" src="img/biotools.png"></a>
+                        <div id="btoolstech" class="tech hidden">
+                            <i class="icon-html5-alt"></i>
+                            <i class="icon-css3-alt"></i>
+                            <i class="icon-javascript-alt"></i>
+                            <i class="icon-jquery"></i>
+                        </div>
+                </div>
+            </div>
             <div class="row" id="1">
                 <div class="col-md-6">
                     <a id="RGB" href="https://codepen.io/jmatty16/full/jYXrZX/" target="_blank"><img class="portfolio-img img-responsive" src="img/RGBcolorgame.PNG"></a>
@@ -151,7 +167,7 @@
                         <i class="icon-jquery"></i>
                     </div>
                     <h3>Pomodoro Clock</h3>
-                    <p>This project was part of <a href="https://www.freecodecamp.com">Free Code Camp's</a> Advanced Front-End Development projects. This clock allow a user to work in a Pomodoro style by letting the user set a timer for work time and a timer for rest time. I used HTML5 canvas to create a clock animation that moves proportionally to how much time is left on the timer.  </p>
+                    <p>This project was part of <a href="https://www.freecodecamp.com">Free Code Camp's</a> Advanced Front-End Development projects. This clock allow a user to work in a Pomodoro style by letting the user set a timer for work time and a timer for rest time. I used <strong>HTML5 canvas</strong> to create a clock animation that moves proportionally to how much time is left on the timer.  </p>
 
                 </div>
                 <div class="col-md-6">
@@ -163,7 +179,7 @@
                         <i class="icon-jquery"></i>
                     </div>
                     <h3>JavaScript Calculator</h3>
-                    <p>This project was part of <a href="https://www.freecodecamp.com">Free Code Camp's</a> Advanced Front-End Development projects. I wanted to emulate a functional calculator on a desk using JavaScript and CSS. I personalized it by creating a cup of coffee and adding a notepad that a user can take notes on. As well as completing basic arithmetic, a user can click on the i button to get more info about the calculator. </p>
+                    <p>This project was part of <a href="https://www.freecodecamp.com">Free Code Camp's</a> Advanced Front-End Development projects. I wanted to emulate a functional calculator on a desk using <strong>JavaScript</strong> and <strong>CSS</strong>. I personalized it by creating a cup of coffee and adding a notepad that a user can take notes on. As well as completing basic arithmetic, a user can click on the i button to get more info about the calculator. </p>
 
                 </div>
 
@@ -203,7 +219,7 @@
             <hr />
         </div>
 	</section>
-	<section id="videos" class="videos">
+	<!-- <section id="videos" class="videos">
 		<div class="container">
 			<h2>Recent Videos</h2>
 			<p> View what I'm teaching on youtube:</p>
@@ -228,7 +244,7 @@
 			<div>
 			
 		</div>
-	</section> 
+	</section>  -->
 	<footer id="contact">
 		<p>Contact me with employment opportunities!</p>
 		<P>Chicago, IL</p>
