@@ -262,11 +262,13 @@ img:hover{
 	position: absolute;
 	margin-top: -30px;
 }
+.proj{
+	padding-bottom: 20px;
+}
 .gitbut{
 	border: solid 2px rgb(117, 129, 163);
 	color: rgb(117, 129, 163);
 	border-radius: 5px;
-	margin-bottom: 20px;
 }
 .see-more{
    margin: 10px 0px;
