@@ -266,6 +266,7 @@ img:hover{
 	border: solid 2px rgb(117, 129, 163);
 	color: rgb(117, 129, 163);
 	border-radius: 5px;
+	margin-bottom: 20px;
 }
 .see-more{
    margin: 10px 0px;
@@ -285,6 +286,7 @@ footer {
 	text-align: center;
 	color: white;
 	padding: 20px;
+	opacity: 0.9;
 	background: rgb(117, 129, 163); /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163)); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(45deg, rgb(117, 129, 163), rgb(152, 117, 163)); /* For Opera 11.1 to 12.0 */
