@@ -2,6 +2,9 @@ body {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 14pt;
 }
+#background-canvas{
+	z-index: 0;
+}
 li a:hover {
 	text-decoration: none;
 	color: black;
@@ -10,7 +13,7 @@ li a {
 	color: white;
 }
 .inactive {
-	display:none;
+	display: none;
 }
 #nav-toggle {
 	color: rgb(117, 129, 163);
@@ -31,13 +34,14 @@ li a {
 	z-index: 2;
 	border-radius: 0px;
 }
-#sidebar-wrapper{
-	background: gray;
+#bar-wrapper{
+	background: #404040;
 	position: fixed;
-	padding: 5px;
-	width: auto;
-	left: 5px;
-	top: 5px;	
+	padding-top: 5px;
+	padding-left: 25px;
+	width: 100%;
+	left: 0px;
+	top: 0px;	
 	z-index: 1;
 	box-shadow: 1px 1px 1px #888888;
 }
@@ -51,10 +55,10 @@ ul {
 	margin-top: 2px;
 }
 li {
-	padding-left: 10px;
+	padding: 10px;
 	text-align: middle;
 }
-.sidebar-nav {
+.bar-nav {
 	color: black;
 }
 #start {
@@ -217,9 +221,22 @@ li {
 	text-align: left;
 	padding-left: 15px;
 }
+.slide-in {
+    animation: slide-in 1s forwards;
+    -webkit-animation: slide-in 1s forwards;
+}
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
+}
+   
 section {
 	margin-bottom: 0px;
 	padding-bottom: 20px;
+	background-color: white;
 }
 section h2 {
 	color: rgb(117, 129, 163);
@@ -235,11 +252,43 @@ section h3 {
 .about {
 	padding-top: 30px;
 	background-color: white;
+	
+}
+#about-container{
+	transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+#head-shot {
+	border: 5px solid rgb(117, 129, 163);
+	height: 150px;
+	width: 150px;
+	float: left;
+	margin: 0 10px 5px 0;
+}
+.skills{
+	background-color: white;
+	text-align: center;
+	padding-top: 30px;
+}
+#skills-container{
+	transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+}
+.skills h2 {
+	text-align: left;
+}
+.skills div {
+	display: inline-block;
+	padding: 5px;
 }
 .portfolio{
 	text-align: center;
 	padding-top: 30px;
 	background-color: white;
+}
+#portfolio-container{
+	transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
 }
 .portfolio h2 {
 	text-align: left;
@@ -309,7 +358,7 @@ footer a {
 	#logo {
 		height: 30px;
 	}
-	#sidebar-wrapper{
+	#bar-wrapper{
 		width: 100%;
 	}
 	iframe {

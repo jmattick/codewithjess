@@ -1,5 +1,44 @@
 $(document).ready(function(){
 
+ //select elements
+  var animation = $.find('.animation');
+  var window_elem = $(window);
+
+  //check if element currently in view
+  function check_if_in_view() {
+    //get window height
+    var window_height = window_elem.height();
+    var window_top= window_elem.scrollTop();
+    var window_bottom = (window_top + window_height);
+
+    //iterate through all animation elements
+    $.each(animation, function() {
+
+      //get element information
+      var element = $(this);
+      var element_height = $(element).outerHeight();
+      var element_top = $(element).offset().top;
+      var element_bottom = (element_top + element_height);
+
+      //check to see if this element is between the viewable space of the viewport and adds animation class
+      if ((element_bottom >= window_top) && (element_top <= window_bottom)) {
+        element.addClass('slide-in');
+      } else {
+        element.removeClass('slide-in');
+      }
+    });
+
+  }
+
+  //on scroll check if element visible
+  $(window).on('scroll resize', function() {
+      check_if_in_view()
+    })
+    //trigger scroll event on initial load
+  $(window).trigger('scroll');
+
+
+
 	//Adds email address to footer
 	var username = "contact";
 	var hostname = "codewithjess.com";
@@ -18,6 +57,12 @@ $(document).ready(function(){
 	}, function(){
 		$(".tech").addClass("hidden");
 	});
+
+  $("#plt").hover(function(){
+    $("#plttech").removeClass("hidden");
+  }, function(){
+    $(".tech").addClass("hidden");
+  });
 
 	$("#RGB").hover(function(){
 		$("#rgbtech").removeClass("hidden");
@@ -66,20 +111,20 @@ $(document).ready(function(){
 
 //opens nav bar | Warning: will not work if inside .ready function
 function togfunc() {
-	$("#sidebar-wrapper").removeClass("inactive");
+	$("#bar-wrapper").removeClass("inactive");
 	$("#close-nav").removeClass("inactive");
 	$("#nav-toggle").addClass("inactive");
 };
 //closes nav bar when button or elements pressed | Warning: will not work if inside .ready function
 function togfunc2() {
-	$("#sidebar-wrapper").addClass("inactive");
+	$("#bar-wrapper").addClass("inactive");
 	$("#close-nav").addClass("inactive");
 	$("#nav-toggle").removeClass("inactive");
 };
 //closes nav bar when user clicks off of menu
 $(document).on("click", function (e) {
-        if ($(e.target).is("#sidebar-wrapper")==false&&$(e.target).is("#nav-toggle")==false) {
-         	$("#sidebar-wrapper").addClass("inactive");
+        if ($(e.target).is("#bar-wrapper")==false&&$(e.target).is("#nav-toggle")==false) {
+         	$("#nbar-wrapper").addClass("inactive");
 			$("#close-nav").addClass("inactive");
 			$("#nav-toggle").removeClass("inactive");
         }
@@ -88,9 +133,8 @@ $(document).on("click", function (e) {
 
 
 
-
-//Loads canvas background
-var canvas = document.querySelector("canvas");
+//canvas background
+var canvas = document.getElementById('background-canvas');
 
 canvas.height = canvas.offsetHeight;
 canvas.width = canvas.offsetWidth;
@@ -107,7 +151,6 @@ var colorArray = ["#757487", "#B3BEB4", "#535269"];
 window.addEventListener("mousemove", function(event) {
   mouse.x = event.x;
   mouse.y = event.y;
-  console.log(mouse);
 });
 window.addEventListener("resize", function() {
   canvas.width = window.innerWidth;
@@ -169,9 +212,6 @@ for (var i = 0; i < 25; i++) {
   circleArray.push(new Circle(x, y, dx, dy, radius));
 }
 
-console.log(circleArray);
-console.log("hello");
-
 function animate() {
   requestAnimationFrame(animate);
   c.clearRect(0, 0, innerWidth, innerHeight);
@@ -182,3 +222,4 @@ function animate() {
 }
 
 animate();
+

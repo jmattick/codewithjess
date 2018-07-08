@@ -26,13 +26,16 @@
 	<!-- navbar -->
 	<button id="nav-toggle" onclick = "togfunc()" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></button>
 	<button id="close-nav" onclick = "togfunc2()" class="btn btn-dark btn-lg toggle inactive"><i class="fa fa-times"></i></button>
-	<nav id="sidebar-wrapper" class="inactive">
-        <ul class="sidebar-nav">
+	<nav id="bar-wrapper" class="inactive">
+        <ul class="bar-nav">
             <li class="brand">
                 <a href="#top" onclick = "togfunc2()"><img src="img/cwjlogo_B2J_icon.ico" style="height:40px;" id="logo"> Code with Jess</a>
             </li>
             <li>
                 <a href="#about" onclick = "togfunc2()">About Me</a>
+            </li>
+            <li>
+                <a href="#skills" onclick = "togfunc2()">Skills</a>
             </li>
             <li>
                 <a href="#portfolio" onclick ="togfunc2()">Portfolio</a>
@@ -47,7 +50,7 @@
     </nav>
 
     <div class = "cont">
-        <canvas></canvas>
+        <canvas id = "background-canvas"></canvas>
     </div>
 	
 	<!---title-->
@@ -63,25 +66,62 @@
 			<a href="https://www.youtube.com/channel/UCD_jjzd3XMNMgEJB3rhAW6w" target="_blank"><i class="icons fa fa-youtube-play fa-4x" aria-hidden="true"></i></a>
 			<a href="https://twitter.com/code_with_jess" target="_blank"><i class="icons fa fa-twitter fa-4x" aria-hidden="true"></i></a>
 			</div> -->
-
-
 		</div>
-	
 	</div>
 	<div id="learnmore">
         <a href="#about">
             <i class="fa fa-4x fa-angle-double-down"></i>
         </a>
 	</div>
-	
+
+	<!-- About Me Section -->
 	<section id="about" class="about">
-		<div class="container">
+		<div id = "about-container" class="container animation">
 			<h2>About Me</h2>
-			<p> My name is <strong>Jessica Mattick</strong>. I am a Biologist and <strong>Full-Stack Web Developer</strong>. I was first introduced to coding while working in a lab during my undergraduate studies and ever since then have spent countless hours in the pursuit of knowledge of computer science. I aim to learn something new from each project I complete and make sure that I can communicate clearly what my code means.</p>
+            <!-- <a href = "https://codepen.io/jmatty16/full/NgYpvb/"><img id = "head-shot" src = "img/head3.png" ></a> -->
+            <div id = "about-text">
+			     <p> My name is <strong>Jessica Mattick</strong>. I am a Biologist and <strong>Full-Stack Web Developer</strong>. I was first introduced to coding while working in a lab during my undergraduate studies and ever since then have spent countless hours studying computer science. I aim to learn something new from each project I complete and make sure that I can communicate clearly what my code means.</p>
+            </div>
 		</div>
 	</section> 
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div id = "skills-container" class="container animation">
+            <h2>Skills</h2>
+            <div>
+            <i class="icon-html5-alt"></i>
+            HTML5
+            </div>
+            <div>
+            <i class="icon-css3-alt"></i>
+            CSS3
+            </div>
+            <div>
+            <i class="icon-javascript-alt"></i>
+            </div>
+            JavaScript
+            <div>
+            <i class="icon-jquery"></i>
+            jQuery
+            </div>
+            <div>
+            <i class="icon-reactjs"></i>
+            React
+            </div>
+            <div>
+            <i class="icon-nodejs"></i> 
+            Node & Express
+            </div>
+            <div>
+            <i class="icon-mongodb"></i>
+            MongoDB</div>
+
+            
+        </div>
+    </section>     
+    <!-- Portfolio Section -->
 	<section id="portfolio" class="portfolio">
-        <div class="container">
+        <div id = "portfolio-container" class="container animation">
             <h2>Portfolio</h2>
             <div class="row">
                 <div>
@@ -94,8 +134,8 @@
                             <i class="icon-css3-alt"></i>
                             <i class="icon-javascript-alt"></i>
                             <i class="icon-jquery"></i>
-                            <i class="icon-nodejs"></i>
                             <i class="icon-mongodb"></i>
+                            <i class="icon-nodejs"></i> 
                         </div>
 
 
@@ -134,6 +174,20 @@
             </div>
             <div class="row" id="1">
                 <div class="col-md-6 proj">
+                    <a id="plt" href="https://jmatty16.github.io/React-Projects/Pig-Latin-Translator/" target="_blank"><img class="portfolio-img img-responsive" src="img/plt.PNG"></a>
+                    <div id="plttech" class="tech hidden">
+                        <i class="icon-html5-alt"></i>
+                        <i class="icon-css3-alt"></i>
+                        <i class="icon-javascript-alt"></i>
+                        <i class="icon-reactjs"></i>
+                    </div>
+                    <h3>React Pig Latin Translator</h3>
+                    <p>
+                        This project is a real-time pig latin translator. I used <strong>React</strong> to create a controlled input for user text that gets translated as the user types. In addition to translating into pig latin, there is a pig animation that "walks" accross the bottom of the page as a footer. 
+                    </p>
+                    <a class = "btn btn-md gitbut" href = "https://github.com/jmatty16/React-Projects/tree/master/Pig-Latin-Translator">Github Repo</a>
+                </div>
+                <div class="col-md-6 proj">
                     <a id="RGB" href="https://codepen.io/jmatty16/full/jYXrZX/" target="_blank"><img class="portfolio-img img-responsive" src="img/RGBcolorgame.PNG"></a>
                     <div id="rgbtech" class="tech hidden">
                         <i class="icon-html5-alt"></i>
@@ -146,6 +200,11 @@
                     </p>
                     <a class = "btn btn-md gitbut" href = "https://github.com/jmatty16/Udemy-Projects/tree/master/RGBcolorGame">Github Repo</a>
                 </div>
+
+
+
+            </div>
+            <div class="row" id="2">
                 <div class="col-md-6 proj">
                     <a id="simon" href="https://codepen.io/jmatty16/full/RxBjPY/" target="_blank"><img class="portfolio-img img-responsive" src="img/simon.PNG"></a>
                     <div id="simontech" class="tech hidden">
@@ -161,9 +220,6 @@
                     <a class = "btn btn-md gitbut" href = "https://github.com/jmatty16/FCC-Advanced-Front-End-Development-Projects/tree/master/simon-game">Github Repo</a>
 
                 </div>
-
-            </div>
-            <div class="row" id="2">
                 <div class="col-md-6 proj">
                     <a id="clock" href="https://codepen.io/jmatty16/full/LLzKvP/" target="_blank"><img class="portfolio-img img-responsive" src="img/pc.png"></a>
                     <div id="clocktech" class="tech hidden">
@@ -177,6 +233,13 @@
                     <a class = "btn btn-md gitbut" href = "https://github.com/jmatty16/FCC-Advanced-Front-End-Development-Projects/tree/master/Pomodoro-Clock">Github Repo</a>
 
                 </div>
+
+            </div>
+            <div class="see-more front-end-proj purple-text">
+                <i class="fa fa-angle-down"></i> See more
+            </div>
+            <div class="row front-end-proj hidden" id="3">
+
                 <div class="col-md-6 proj">
                     <a id="calc" href="https://codepen.io/jmatty16/full/YQxybZ/" target="_blank"><img class="portfolio-img img-responsive" src="img/calc.png"></a>
                     <div id="calctech" class="tech hidden">
@@ -188,25 +251,6 @@
                     <h3>JavaScript Calculator</h3>
                     <p>This project was part of <a href="https://www.freecodecamp.com">Free Code Camp's</a> Advanced Front-End Development projects. I wanted to emulate a functional calculator on a desk using <strong>JavaScript</strong> and <strong>CSS</strong>. I personalized it by creating a cup of coffee and adding a notepad that a user can take notes on. As well as completing basic arithmetic, a user can click on the i button to get more info about the calculator. </p>
                     <a class = "btn btn-md gitbut" href = "https://github.com/jmatty16/FCC-Advanced-Front-End-Development-Projects/tree/master/Javascript-Calculator">Github Repo</a>
-
-                </div>
-
-            </div>
-            <div class="see-more front-end-proj purple-text">
-                <i class="fa fa-angle-down"></i> See more
-            </div>
-            <div class="row front-end-proj hidden" id="3">
-                <div class="col-md-6 proj">
-                    <a id="wiki" href="https://codepen.io/jmatty16/full/Lywwzw/" target="_blank"><img class="portfolio-img img-responsive" src="img/wv.png"></a>
-                    <div id="wikitech" class="tech hidden">
-                        <i class="icon-html5-alt"></i>
-                        <i class="icon-css3-alt"></i>
-                        <i class="icon-javascript-alt"></i>
-                        <i class="icon-jquery"></i>
-                    </div>
-                    <h3>Wikipedia Viewer</h3>
-                    <p> I created this Wikipedia Viewer as part of <a href="https://www.freecodecamp.com">Free Code Camp's</a> Intermediate Front-End Development challenges. A user can search for any term and this viewer will show links to relevant wikipedia entries as well as previews to the articles. This project solidified my understanding of using JSONP.</p>
-                    <a class = "btn btn-md gitbut" href = "https://github.com/jmatty16/FCC-Intermediate-Front-End-Development-Projects/tree/master/Wikipedia-Viewer">Github Repo</a>
 
                 </div>
                 <div class="col-md-6 proj">
