@@ -258,6 +258,12 @@ section h3 {
 	transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
 }
+@media(max-width: 600px){
+	#about-container{
+	transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+}
+}
 #head-shot {
 	border: 5px solid rgb(117, 129, 163);
 	height: 150px;
@@ -274,6 +280,12 @@ section h3 {
 	transform: translateX(100%);
     -webkit-transform: translateX(100%);
 }
+@media(max-width: 600px){
+	#skills-container{
+	transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+}
+}
 .skills h2 {
 	text-align: left;
 }
@@ -289,6 +301,12 @@ section h3 {
 #portfolio-container{
 	transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
+}
+@media(max-width: 600px){
+	#portfolio-container{
+	transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+}
 }
 .portfolio h2 {
 	text-align: left;
