@@ -203,7 +203,7 @@ function Circle(x, y, dx, dy, radius) {
 
 var circleArray = [];
 
-for (var i = 0; i < 25; i++) {
+for (var i = 0; i < 75; i++) {
   var x = Math.random() * (innerWidth - radius * 2) + radius;
   var dx = (Math.random() - 0.5) * 1;
   var y = Math.random() * (innerHeight - radius * 2) + radius;

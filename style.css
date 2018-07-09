@@ -1,6 +1,8 @@
 body {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 14pt;
+	width: 100%;
+	overflow-x: hidden;
 }
 #background-canvas{
 	z-index: 0;
@@ -397,7 +399,6 @@ footer a {
 
 
 canvas {
-  border: 1px solid black;
   width: 100%;
   height: 100%;
   z-index: -1;
