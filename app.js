@@ -116,17 +116,17 @@ function togfunc() {
 	$("#nav-toggle").addClass("inactive");
 };
 //closes nav bar when button or elements pressed | Warning: will not work if inside .ready function
-function togfunc2() {
-	$("#bar-wrapper").addClass("inactive");
-	$("#close-nav").addClass("inactive");
-	$("#nav-toggle").removeClass("inactive");
-};
+// function togfunc2() {
+// 	$("#bar-wrapper").addClass("inactive");
+// 	$("#close-nav").addClass("inactive");
+// 	$("#nav-toggle").removeClass("inactive");
+// };
 //closes nav bar when user clicks off of menu
 $(document).on("click", function (e) {
-        if ($(e.target).is("#bar-wrapper")==false&&$(e.target).is("#nav-toggle")==false) {
-         	$("#nbar-wrapper").addClass("inactive");
-			$("#close-nav").addClass("inactive");
-			$("#nav-toggle").removeClass("inactive");
+        if ($(e.target).is("#bar-wrapper")==false&&$(e.target).is("#nav-toggle")==false&&$(e.target).is("#hamburger")==false) {
+         	  $("#bar-wrapper").addClass("inactive");
+      			$("#close-nav").addClass("inactive");
+      			$("#nav-toggle").removeClass("inactive");
         }
     });
 
