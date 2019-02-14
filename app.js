@@ -52,6 +52,12 @@ $(document).ready(function(){
     $(".tech").addClass("hidden");
   });
 
+  $("#co").hover(function(){
+    $("#cotech").removeClass("hidden");
+  }, function(){
+    $(".tech").addClass("hidden");
+  });
+
 	$("#pfe").hover(function(){
 		$("#pfetech").removeClass("hidden");
 	}, function(){
