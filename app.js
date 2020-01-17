@@ -58,6 +58,12 @@ $(document).ready(function(){
     $(".tech").addClass("hidden");
   });
 
+  $("#brm").hover(function(){
+    $("#brmtech").removeClass("hidden");
+  }, function(){
+    $(".tech").addClass("hidden");
+  });
+
 	$("#pfe").hover(function(){
 		$("#pfetech").removeClass("hidden");
 	}, function(){
