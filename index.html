@@ -155,11 +155,53 @@
 	<section id="portfolio" class="portfolio">
         <div id = "portfolio-container" class="container animation">
             <h2>Portfolio</h2>
+            
+                <div class="row">
+                    <div>
+                        <h3 class="tleft">Full-Stack Web Applications</h3>
+                        <div class = "col-md-8 col-md-push-4">
+                            <a id="ep" href="https://github.com/jmattick/experiment_planner" target="_blank"><img class="portfolio-img img-responsive" src="img/experiment_scheduler.png"></a>
+                                <div id="eptech" class="tech hidden">
+                                    <i class="icon-python"></i>
+                                </div>
+                        </div>
+                        <div class = "col-md-4 col-md-pull-8">
+                            <h3>Optimal Experiment Scheduler</h3>
+                                <p>
+                                    <strong>Python</strong> web app using <strong>Django</strong> that schedules long experiments in an optimal way. Experiments are represented as a directed acyclic graph. The application uses dynamic programming to score potential experiments against the current schedule. The best score is chosen by applying Dijkstra’s shortest path algorithm to determine the lowest scoring experiment. Scores are visualized as a bar graph over a user defined range of start dates using <strong>Plotly</strong>. The user can select any of these dates to schedule the optimal experiment and add it to the calendar. 
+                                </p>
+                                <a class = "btn btn-md gitbut" href = "https://github.com/jmattick/experiment_planner">Github Repo</a>
+                        </div>
+
+
+                        <div class="col-md-8 pad">
+
+                            <a id="pfe" href="http://www.pocketsforeveryone.com/" target="_blank"><img class="portfolio-img img-responsive" src="img/pfe.PNG"></a>
+                            <div id="pfetech" class="tech hidden">
+                                <i class="icon-html5-alt"></i>
+                                <i class="icon-css3-alt"></i>
+                                <i class="icon-javascript-alt"></i>
+                                <i class="icon-jquery"></i>
+                                <i class="icon-mongodb"></i>
+                                <i class="icon-nodejs"></i> 
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Pockets for Everyone</h3>
+                            <p>
+                                Pockets provides a space for members to communicate about their experiences buying clothing with a focus on clothing vendors that are gender-inclusive. This app uses <strong>MongoDB, Express, EJS, and Node</strong>. Users can add vendor pages and comment on existing vendors. A user can have either a standard user role or an admin role. To moderate content, users can report vendors or comments. If a vendor or comment has been reported by multiple users, it will be hidden from the page unless approved by an admin. Admins have special permissions that standard users do not, such as the ability to approve flagged content, edit/delete any vendor/comment, and view messages sent to admins.
+                            </p>
+                            <a class = "btn btn-md gitbut" href = "https://github.com/jmattick/Pockets-for-Everyone">Github Repo</a>
+                        </div>
+                    </div>
+                </div>
+
             <!-- 
 
 
              -->
-
 
                 <div class="row">
                 <div>
@@ -200,152 +242,8 @@
 
 
               -->
-            <div class="row">
-                <div>
-                    <h3 class="tleft">Full-Stack Projects</h3>
-                    <div class="col-md-8">
+            
 
-                        <a id="pfe" href="http://www.pocketsforeveryone.com/" target="_blank"><img class="portfolio-img img-responsive" src="img/pfe.PNG"></a>
-                        <div id="pfetech" class="tech hidden">
-                            <i class="icon-html5-alt"></i>
-                            <i class="icon-css3-alt"></i>
-                            <i class="icon-javascript-alt"></i>
-                            <i class="icon-jquery"></i>
-                            <i class="icon-mongodb"></i>
-                            <i class="icon-nodejs"></i> 
-                        </div>
-
-
-                    </div>
-                    <div class="col-md-4">
-                        <h3>Pockets for Everyone</h3>
-                        <p>
-                            Pockets provides a space for members to communicate about their experiences buying clothing with a focus on clothing vendors that are gender-inclusive. This app uses <strong>MongoDB, Express, EJS, and Node</strong>. Users can add vendor pages and comment on existing vendors. A user can have either a standard user role or an admin role. To moderate content, users can report vendors or comments. If a vendor or comment has been reported by multiple users, it will be hidden from the page unless approved by an admin. Admins have special permissions that standard users do not, such as the ability to approve flagged content, edit/delete any vendor/comment, and view messages sent to admins.
-                        </p>
-                        <a class = "btn btn-md gitbut" href = "https://github.com/jmattick/Pockets-for-Everyone">Github Repo</a>
-                    </div>
-                </div>
-            </div>
-
-            <h3 class="left">Front-End Projects</h3>
-            <div class = "row row-fluid">
-
-                <div class = "col-md-8 col-md-push-4">
-                    <a id="btools" href="https://jmattick.github.io/BioTools/" target="_blank"><img class="portfolio-img img-responsive" src="img/biotools2.PNG"></a>
-                        <div id="btoolstech" class="tech hidden">
-                            <i class="icon-html5-alt"></i>
-                            <i class="icon-css3-alt"></i>
-                            <i class="icon-javascript-alt"></i>
-                            <i class="icon-jquery"></i>
-                        </div>
-                </div>
-                <div class = "col-md-4 col-md-pull-8">
-                    <h3>BioTools</h3>
-                    <p> Biotools provides a space to showcase my solutions to bioinformatics problems. The landing page has a rotating double helix created using <strong>CSS</strong> animations. The first section is devoted to functional bioinformatics web tools created with <strong>JavaScript</strong> that can be utilized in browser. The next section provides <strong>Python</strong> scripts that I have written that users can copy to run on their own computer. The last section showcases <strong>R</strong> tutorials that I have taught. 
-                    </p>
-                    <a class = "btn btn-md gitbut" href = "https://github.com/jmattick/BioTools">Github Repo</a>
-                </div>
-
-                
-            </div>
-            <div class="row" id="1">
-                <div class="col-md-6 proj">
-                    <a id="plt" href="https://jmattick.github.io/React-Projects/Pig-Latin-Translator/" target="_blank"><img class="portfolio-img img-responsive" src="img/plt.PNG"></a>
-                    <div id="plttech" class="tech hidden">
-                        <i class="icon-html5-alt"></i>
-                        <i class="icon-css3-alt"></i>
-                        <i class="icon-javascript-alt"></i>
-                        <i class="icon-reactjs"></i>
-                    </div>
-                    <h3>React Pig Latin Translator</h3>
-                    <p>
-                        This project is a real-time pig latin translator. I used <strong>React</strong> to create a controlled input for user text that gets translated as the user types. In addition to translating into pig latin, there is a pig animation that "walks" accross the bottom of the page as a footer. 
-                    </p>
-                    <a class = "btn btn-md gitbut" href = "https://github.com/jmattick/React-Projects/tree/master/Pig-Latin-Translator">Github Repo</a>
-                </div>
-                <div class="col-md-6 proj">
-                    <a id="RGB" href="https://codepen.io/jmatty16/full/jYXrZX/" target="_blank"><img class="portfolio-img img-responsive" src="img/RGBcolorgame.PNG"></a>
-                    <div id="rgbtech" class="tech hidden">
-                        <i class="icon-html5-alt"></i>
-                        <i class="icon-css3-alt"></i>
-                        <i class="icon-javascript-alt"></i>
-                    </div>
-                    <h3>RGB Color Game</h3>
-                    <p>
-                        This project tests a user's rgb color knowledge by displaying tiles of varying colors and an rgb color code. The user must click on the correct colored tile. If the user is incorrect, the tile will disappear. If the user is correct, the title background will match the correct color and a new round will begin.
-                    </p>
-                    <a class = "btn btn-md gitbut" href = "https://github.com/jmattick/Udemy-Projects/tree/master/RGBcolorGame">Github Repo</a>
-                </div>
-
-
-
-            </div>
-            <div class="row" id="2">
-                <div class="col-md-6 proj">
-                    <a id="simon" href="https://codepen.io/jmatty16/full/RxBjPY/" target="_blank"><img class="portfolio-img img-responsive" src="img/simon.PNG"></a>
-                    <div id="simontech" class="tech hidden">
-                        <i class="icon-html5-alt"></i>
-                        <i class="icon-css3-alt"></i>
-                        <i class="icon-javascript-alt"></i>
-                        <i class="icon-jquery"></i>
-                    </div>
-                    <h3>Simon Game</h3>
-                    <p>
-                        The final project in <a href="https://www.freecodecamp.com">Free Code Camp's</a> Advanced Front-End Development projects leading to the Front-End Development Certificate. This app mimics the classic Simon game by requiring users to match a sequence of buttons to what they observe from the computer. An important aspect of developing this app was to coordinate the timing sequences.
-                    </p>
-                    <a class = "btn btn-md gitbut" href = "https://github.com/jmattick/FCC-Advanced-Front-End-Development-Projects/tree/master/simon-game">Github Repo</a>
-
-                </div>
-                <div class="col-md-6 proj">
-                    <a id="clock" href="https://codepen.io/jmatty16/full/LLzKvP/" target="_blank"><img class="portfolio-img img-responsive" src="img/pc.png"></a>
-                    <div id="clocktech" class="tech hidden">
-                        <i class="icon-html5-alt"></i>
-                        <i class="icon-css3-alt"></i>
-                        <i class="icon-javascript-alt"></i>
-                        <i class="icon-jquery"></i>
-                    </div>
-                    <h3>Pomodoro Clock</h3>
-                    <p>This project was part of <a href="https://www.freecodecamp.com">Free Code Camp's</a> Advanced Front-End Development projects. This clock allow a user to work in a Pomodoro style by letting the user set a timer for work time and a timer for rest time. I used <strong>HTML5 canvas</strong> to create a clock animation that moves proportionally to how much time is left on the timer.  </p>
-                    <a class = "btn btn-md gitbut" href = "https://github.com/jmattick/FCC-Advanced-Front-End-Development-Projects/tree/master/Pomodoro-Clock">Github Repo</a>
-
-                </div>
-
-            </div>
-            <div class="see-more front-end-proj purple-text">
-                <i class="fa fa-angle-down"></i> See more
-            </div>
-            <div class="row front-end-proj hidden" id="3">
-
-                <div class="col-md-6 proj">
-                    <a id="calc" href="https://codepen.io/jmatty16/full/YQxybZ/" target="_blank"><img class="portfolio-img img-responsive" src="img/calc.png"></a>
-                    <div id="calctech" class="tech hidden">
-                        <i class="icon-html5-alt"></i>
-                        <i class="icon-css3-alt"></i>
-                        <i class="icon-javascript-alt"></i>
-                        <i class="icon-jquery"></i>
-                    </div>
-                    <h3>JavaScript Calculator</h3>
-                    <p>This project was part of <a href="https://www.freecodecamp.com">Free Code Camp's</a> Advanced Front-End Development projects. I wanted to emulate a functional calculator on a desk using <strong>JavaScript</strong> and <strong>CSS</strong>. I personalized it by creating a cup of coffee and adding a notepad that a user can take notes on. As well as completing basic arithmetic, a user can click on the i button to get more info about the calculator. </p>
-                    <a class = "btn btn-md gitbut" href = "https://github.com/jmattick/FCC-Advanced-Front-End-Development-Projects/tree/master/Javascript-Calculator">Github Repo</a>
-
-                </div>
-                <div class="col-md-6 proj">
-                    <a id="quote" href="http://codepen.io/jmatty16/full/ZpKRXV" target="_blank"><img class="portfolio-img img-responsive" src="img/rqm.png"></a>
-                    <div id="quotetech" class="tech hidden">
-                        <i class="icon-html5-alt"></i>
-                        <i class="icon-css3-alt"></i>
-                        <i class="icon-javascript-alt"></i>
-                        <i class="icon-jquery"></i>
-                    </div>
-                    <h3>Random Quote Machine</h3>
-                    <p> I created this Random Quote Machine as part of <a href="https://www.freecodecamp.com">Free Code Camp's</a> Intermediate Front-End Development challenges. A user can press a button to recieve a random quote and then press another button to tweet that quote. </p>
-                    <a class = "btn btn-md gitbut" href = "https://github.com/jmattick/FCC-Intermediate-Front-End-Development-Projects/tree/master/Random-Quote-Machine">Github Repo</a>
-                </div>
-
-            </div>
-            <div class="see-more front-end-proj hidden purple-text">
-                <i class="fa fa-angle-up"></i> See less
-            </div>
         </div>
 	</section>
 	<!-- <section id="videos" class="videos">

@@ -64,6 +64,12 @@ $(document).ready(function(){
     $(".tech").addClass("hidden");
   });
 
+  $("#ep").hover(function(){
+    $("#eptech").removeClass("hidden");
+  }, function(){
+    $(".tech").addClass("hidden");
+  });
+
 	$("#pfe").hover(function(){
 		$("#pfetech").removeClass("hidden");
 	}, function(){
